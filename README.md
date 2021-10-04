@@ -3,9 +3,10 @@
 Nama                : Muhammad Fikri Sandi Pratama <br/>
 NRP                 : 05111940000195 <br/>
 Kelas               : Grafika Komputer - D <br/>
-Keterangan Gambar   : Dioda
-Keterangan          : Gambar kiri -> Foto Belakang Atas
-                    : Gambar Kanan -> Foto Kanan atas
+Keterangan Gambar   : Dioda <br>
+Keterangan          : <br>
+Gambar kiri -> Foto Belakang Atas <br>
+Gambar Kanan -> Foto Kanan atas
 
 ![bouncing](img/dioda_gambar.gif)
 
