@@ -9,6 +9,7 @@ function main() {
         line_top_c: [-0.52, 0.1],
         line_top_d: [-0.56, 0.1],
 
+        Body_dioda_top_color: [0.690, 0.656, 0.656],
         Body_dioda_color: [-0.0100, -0.00133, 0.00],
         body_a: [-0.66, 0.0],
         body_b: [-0.64, 0.1],
@@ -33,6 +34,7 @@ function main() {
         line_left_c: [0.25, -0.15],
         line_left_d: [0.25, -0.22],
 
+        Body_dioda_2_top_color: [0.690, 0.656, 0.656],
         Body_dioda_2_color: [-0.0100, -0.00133, 0.00],
         body_2_a: [0.28, 0.08],
         body_2_b: [0.25, 0.0],
@@ -51,18 +53,18 @@ function main() {
 
     const vertices = [
         ...object_dioda.line_top_a, ...object_dioda.line_top_color,
-        ...object_dioda.line_top_b, ...object_dioda.line_top_color,
-        ...object_dioda.line_top_c, ...object_dioda.line_top_color,
-        ...object_dioda.line_top_a, ...object_dioda.line_top_color,
+        ...object_dioda.line_top_b, ...object_dioda.line_top_color, 
+        ...object_dioda.line_top_c, ...object_dioda.line_top_color, 
+        ...object_dioda.line_top_a, ...object_dioda.line_top_color, 
         ...object_dioda.line_top_c, ...object_dioda.line_top_color,
         ...object_dioda.line_top_d, ...object_dioda.line_top_color, // 30
 
-        ...object_dioda.body_a, ...object_dioda.Body_dioda_color,
-        ...object_dioda.body_b, ...object_dioda.Body_dioda_color,
-        ...object_dioda.body_c, ...object_dioda.Body_dioda_color,
-        ...object_dioda.body_d, ...object_dioda.Body_dioda_color,
-        ...object_dioda.body_c, ...object_dioda.Body_dioda_color,
-        ...object_dioda.body_a, ...object_dioda.Body_dioda_color, // 60
+        ...object_dioda.body_a, ...object_dioda.Body_dioda_top_color,
+        ...object_dioda.body_b, ...object_dioda.Body_dioda_top_color,
+        ...object_dioda.body_c, ...object_dioda.Body_dioda_top_color,
+        ...object_dioda.body_d, ...object_dioda.Body_dioda_top_color,
+        ...object_dioda.body_c, ...object_dioda.Body_dioda_top_color,
+        ...object_dioda.body_a, ...object_dioda.Body_dioda_top_color, // 60
 
         ...object_dioda.body_a, ...object_dioda.Body_dioda_color,
         ...object_dioda.body_d, ...object_dioda.Body_dioda_color,
@@ -107,12 +109,12 @@ function main() {
         ...object_dioda_2.body_2_h, ...object_dioda_2.Body_dioda_2_color,
         ...object_dioda_2.body_2_a, ...object_dioda_2.Body_dioda_2_color, // 240
 
-        ...object_dioda_2.body_2_e, ...object_dioda_2.Body_dioda_2_color,
-        ...object_dioda_2.body_2_f, ...object_dioda_2.Body_dioda_2_color,
-        ...object_dioda_2.body_2_h, ...object_dioda_2.Body_dioda_2_color,
-        ...object_dioda_2.body_2_g, ...object_dioda_2.Body_dioda_2_color,
-        ...object_dioda_2.body_2_h, ...object_dioda_2.Body_dioda_2_color,
-        ...object_dioda_2.body_2_f, ...object_dioda_2.Body_dioda_2_color, // 270
+        ...object_dioda_2.body_2_e, ...object_dioda_2.Body_dioda_2_top_color,
+        ...object_dioda_2.body_2_f, ...object_dioda_2.Body_dioda_2_top_color,
+        ...object_dioda_2.body_2_h, ...object_dioda_2.Body_dioda_2_top_color,
+        ...object_dioda_2.body_2_g, ...object_dioda_2.Body_dioda_2_top_color,
+        ...object_dioda_2.body_2_h, ...object_dioda_2.Body_dioda_2_top_color,
+        ...object_dioda_2.body_2_f, ...object_dioda_2.Body_dioda_2_top_color, // 270
 
         ...object_dioda_2.line_right_a, ...object_dioda_2.line_left_color,
         ...object_dioda_2.line_right_b, ...object_dioda_2.line_left_color,
