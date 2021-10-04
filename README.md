@@ -8,7 +8,7 @@ Keterangan          : <br>
 Gambar kiri -> Foto Belakang Atas <br>
 Gambar Kanan -> Foto Kanan atas
 
-![bouncing](img/dioda_gambar.gif)
+![bouncing](img/dioda_color.gif)
 
 ### Depan Atas
 ![alt text](https://github.com/cg2021d/tugas-1-fikrisandi/blob/main/img/depan_atas.jpeg)
