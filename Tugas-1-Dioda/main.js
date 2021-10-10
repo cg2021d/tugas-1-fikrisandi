@@ -102,10 +102,10 @@ function main() {
         ...object_dioda_2.body_2_c, ...object_dioda_2.Body_dioda_2_color,
         ...object_dioda_2.body_2_b, ...object_dioda_2.Body_dioda_2_color, // 210
 
-        ...object_dioda_2.body_2_a, ...object_dioda_2.Body_dioda_2_color,
+        ...object_dioda_2.body_2_a, ...object_dioda_2.Body_dioda_2_color, 
         ...object_dioda_2.body_2_d, ...object_dioda_2.Body_dioda_2_color,
         ...object_dioda_2.body_2_e, ...object_dioda_2.Body_dioda_2_color,
-        ...object_dioda_2.body_2_e, ...object_dioda_2.Body_dioda_2_color,
+        ...object_dioda_2.body_2_e, ...object_dioda_2.Body_dioda_2_color, 
         ...object_dioda_2.body_2_h, ...object_dioda_2.Body_dioda_2_color,
         ...object_dioda_2.body_2_a, ...object_dioda_2.Body_dioda_2_color, // 240
 

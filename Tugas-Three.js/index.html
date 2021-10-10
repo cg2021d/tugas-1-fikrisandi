@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>Document</title>
+        <script src="js/three.min.js"></script>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+        let scene, camera, renderer, cone, sphere, line, box;
+
+        let createBox = function () {
+                let geometry = new THREE.BoxGeometry(1, 1, 1);  // lebar, tinggi, kedalaman
+                const texture_1 = new THREE.TextureLoader().load('./dice/1.jpg');
+                const texture_2 = new THREE.TextureLoader().load('./dice/2.jpg');
+                const texture_3 = new THREE.TextureLoader().load('./dice/3.jpg');
+                const texture_4 = new THREE.TextureLoader().load('./dice/4.jpg');
+                const texture_5 = new THREE.TextureLoader().load('./dice/5.jpg');
+                const texture_6 = new THREE.TextureLoader().load('./dice/6.jpg');
+                
+                const mat_array = [
+                        new THREE.MeshBasicMaterial({map:texture_1}),
+                        new THREE.MeshBasicMaterial({map:texture_2}),
+                        new THREE.MeshBasicMaterial({map:texture_3}),
+                        new THREE.MeshBasicMaterial({map:texture_4}),
+                        new THREE.MeshBasicMaterial({map:texture_5}),
+                        new THREE.MeshBasicMaterial({map:texture_6})
+                ]
+                
+                box = new THREE.Mesh(geometry, mat_array);
+                
+                scene.add(box);
+        };
+
+        let createCone = function() {
+                const geometry = new THREE.ConeGeometry( 1, 2, 50 );
+                const texture = new THREE.TextureLoader().load('./texture_cone.jpg');
+                const material = new THREE.MeshPhongMaterial( {
+                        shininess: 100,
+                        map: texture,
+                });
+                
+                cone = new THREE.Mesh( geometry, material );
+                scene.add( cone );    
+        };
+
+        // object Sphere (seperti bola)
+        let createSphere = function () {
+                let geometry = new THREE.SphereGeometry(1, 30, 30);
+                const texture = new THREE.TextureLoader().load('./texture_star.jpg');
+                let material = new THREE.MeshPhongMaterial({
+                        emissive: 'rgb(200,40,20)',
+                        // wireframe: true,
+                        flatShading: true,
+                        map: texture,
+                });
+
+                let light = new THREE.PointLight(0xffff66, 0.5,50);
+                light.position.set(5, 3, 3);
+                let light2 = new THREE.PointLight(0xffff66, 0.5,50);
+                light2.position.set(3, -5, 3);
+                let light3 = new THREE.PointLight(0xffff66, 0.5,50);
+                light3.position.set(-5, 3, 3);
+                let light4 = new THREE.PointLight(0xffff66, 0.5,50);
+                light4.position.set(-3, -5, 3);
+                scene.add(light);
+                scene.add(light2);
+                scene.add(light3);
+                scene.add(light4);
+
+                sphere = new THREE.Mesh(geometry, material);
+                scene.add(sphere);
+        };
+
+        // Wideframe untuk background
+        let createLine = function (){
+        const geometry = new THREE.SphereGeometry(200, 200, 200 );
+        const wireframe = new THREE.WireframeGeometry( geometry );
+        
+        line = new THREE.LineSegments( wireframe );
+        line.material.depthTest = false;
+        line.material.opacity = 0.25;
+        line.material.transparent = true;
+        line.position.x = 4;
+        scene.add( line );
+        
+        };
+
+        // set up the environment - 
+        // initiallize scene, camera, objects and renderer
+        let init = function () {
+                // 1. create the scene
+                scene = new THREE.Scene();
+                scene.background = new THREE.Color(0xababab);
+                
+                // 2. create an locate the camera       
+                camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight,
+                        1, 1000);
+                camera.position.z = 10;
+
+                // 3. create an locate the object on the scene           
+                createLine();
+                
+
+                createSphere();
+                sphere.position.x = -4;
+                sphere.position.y = -0.1;
+
+                createBox();
+                box.position.x = 4;
+                box.position.y = 0.1;
+                
+                createCone();
+                // cone.position.x = 2;
+
+                // 4. create the renderer     
+                renderer = new THREE.WebGLRenderer();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+                document.body.appendChild(renderer.domElement);
+
+        };
+
+
+        // main animation loop - calls 50-60 in a second.
+        let mainLoop = function () {
+                // console.log("Hello");
+                cone.rotation.x += 0.01;
+                cone.rotation.y += 0.01;
+                sphere.rotation.x += 0.01;
+                sphere.rotation.y += 0.01;
+                box.rotation.x += 0.01;
+                box.rotation.y += 0.02;
+                renderer.render(scene, camera);
+                requestAnimationFrame(mainLoop);
+        };
+
+        init();
+        mainLoop();
+</script>
