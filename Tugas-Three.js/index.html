@@ -97,7 +97,7 @@
         let createSphere = function () {
                 let geometry = new THREE.SphereGeometry(1, 30, 30);
                 const texture = new THREE.TextureLoader().load('./texture_star.jpg');
-                let material = new THREE.MeshPhongMaterial({
+                let material = new THREE.MeshLambertMaterial({
                         emissive: 'rgb(200,40,20)',
                         // wireframe: true,
                         flatShading: true,
@@ -124,7 +124,7 @@
         let createSphere2 = function () {
                 let geometry = new THREE.SphereGeometry(1, 30, 30);
                 const texture = new THREE.TextureLoader().load('./texture_star.jpg');
-                let material = new THREE.MeshPhongMaterial({
+                let material = new THREE.MeshLambertMaterial({
                         emissive: 'rgb(200,40,20)',
                         wireframe: true,
                         flatShading: true,

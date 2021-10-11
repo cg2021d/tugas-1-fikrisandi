@@ -4,6 +4,7 @@ Nama                : Muhammad Fikri Sandi Pratama <br/>
 NRP                 : 05111940000195 <br/>
 Kelas               : Grafika Komputer - D <br/>
 Keterangan Gambar   : Tugas Three.js 3 object (sphere, cone, box) <br>
+                    : Menggunakan 2 material (basic, lambert dan Phong), menggunakan 5 pencahayaan yang bisa dipilih (pointLight, ambientLight, directLight, hemiLight, spotLight) <br>
 
 ![bouncing](img/tugas-threejs.gif)
 
@@ -16,11 +17,6 @@ Gambar kiri -> Foto Belakang Atas <br>
 Gambar Kanan -> Foto Kanan atas
 
 ![bouncing](img/dioda_color.gif)
-<<<<<<< HEAD
-![bouncing](img/threejs.gif)
-=======
-
->>>>>>> 748d0c5b0e259fbc723e3eefc3c56c44b162dc68
 
 ### Depan Atas
 ![alt text](https://github.com/cg2021d/tugas-1-fikrisandi/blob/main/img/depan_atas.jpeg)
