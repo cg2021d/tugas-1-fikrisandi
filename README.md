@@ -9,7 +9,7 @@ Gambar kiri -> Foto Belakang Atas <br>
 Gambar Kanan -> Foto Kanan atas
 
 ![bouncing](img/dioda_color.gif)
-![bouncing](img/tugas-threejs.gif)
+![bouncing](img/threejs.gif)
 
 ### Depan Atas
 ![alt text](https://github.com/cg2021d/tugas-1-fikrisandi/blob/main/img/depan_atas.jpeg)
