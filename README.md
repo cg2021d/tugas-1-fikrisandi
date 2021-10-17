@@ -3,13 +3,6 @@
 Nama                : Muhammad Fikri Sandi Pratama <br/>
 NRP                 : 05111940000195 <br/>
 Kelas               : Grafika Komputer - D <br/>
-Keterangan Gambar   : Tugas Three.js 3 object (sphere, cone, box), Menggunakan 3 material (basic, lambert dan Phong), menggunakan 5 pencahayaan yang bisa dipilih (pointLight, ambientLight, directLight, hemiLight, spotLight) <br>
-
-![bouncing](img/threejs.gif)
-
-Nama                : Muhammad Fikri Sandi Pratama <br/>
-NRP                 : 05111940000195 <br/>
-Kelas               : Grafika Komputer - D <br/>
 Keterangan Gambar   : Dioda <br>
 Keterangan          : <br>
 Gambar kiri -> Foto Belakang Atas <br>
