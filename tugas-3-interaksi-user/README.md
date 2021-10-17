@@ -9,7 +9,7 @@ Kelas               : Grafika Komputer - D <br/>
 2. Sphere dibuat dengan interval waktu tertertu dan akan semakin cepat.
 3. Jika memilih objek dengan warna yang sama, maka score akan bertambah 40 poin.
 4. Jika memilih objek dengan warna yang berbeda, maka score akan berkurang 20 poin.
-5. dan jika memilih objek yang sama maka point tidak berkurang dan tidak bertambah
+5. dan jika memilih objek yang sama (objek pertama di klik 2x) maka point tidak berkurang dan tidak bertambah
 6. Maksimal sphere yang dibuat adalah 58, sehingga score akan ter-reset ketika sphere sudah mencapai 58.
 7. Highscore akan tergantikan bila ada score tertinggi saat reset score dilakukan.
 8. Objek memiliki efek rotasi ketika diklik.
